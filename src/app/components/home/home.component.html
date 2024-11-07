@@ -1,0 +1,22 @@
+<h1>Home works!</h1>
+
+<!-- Pipes -->
+ <h3>Custom pipe to make the string uppercase</h3>
+<p>{{ 'angular 17' | custom }}</p>
+
+<!-- Directive -->
+<h3>Custom directive to highlight the text on  hover</h3>
+<p appHighlight>Hover over this text to see the highlight directive in action!</p>
+
+
+<!-- String Interpolation and Property Binding -->
+<h3>{{ title }}</h3>
+<img [src]="imageUrl" alt="Angular Logo" width="300">
+
+<!-- Event Binding and Two-way Binding -->
+ <div>
+  <h3>Event Binding and Two-way Binding16</h3>
+<input [(ngModel)]="name" placeholder="Enter your name">
+<p>Hello, {{ name }}!</p>
+<button (click)="logMessage()">Click me</button>
+</div>

@@ -1,0 +1,13 @@
+<p>contact works!</p>
+
+<!-- Template-Driven Form -->
+<form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
+  <input type="text" ngModel name="firstName" placeholder="First Name">
+  <button type="submit">Submit</button>
+</form>
+
+<!-- Reactive Form -->
+<form [formGroup]="contactForm" (ngSubmit)="onReactiveSubmit()">
+  <input formControlName="name" placeholder="Name">
+  <button type="submit">Submit</button>
+</form>
